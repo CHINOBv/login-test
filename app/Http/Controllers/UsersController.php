@@ -15,8 +15,16 @@ class UsersController extends Controller
      */
     public function index()
     {
-        $users = User::where('id', '!=', Auth::user()->id)->get();
-        return view('users.index')->with('users', $users);
+        $users = User::where('id', '!=', Auth::user()->id);
+
+        if (request()->search && request()->search !== '') {
+            $users->where('name', 'like', '%'.request()->search.'%')
+            ->orWhere('email', 'like', '%'.request()->search.'%')
+            ->orWhere('address', 'like', '%'.request()->search.'%')
+            ->orWhere('phone', 'like', '%'.request()->search.'%');
+        }
+
+        return view('users.index')->with('users', $users->get())->with('search', request()->search);
     }
 
     /**
