@@ -4,13 +4,17 @@ $purple: #5352ed;
 $hard-purple: #3742fa;
 $red: #ff4757;
 $dark: #2f3542;
-
+$grey: #57606f;
+$success: #2ed573;
+$warning: #ffa502;
 $theme-colors: (
   'primary': $purple,
   'purple': $purple,
   'hard-purple': $hard-purple,
   'red': $red,
-
+  'success': $success,
+  'grey': $grey,
+  'warning': $warning,
 );
 
 $table-variants: (

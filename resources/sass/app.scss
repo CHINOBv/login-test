@@ -7,6 +7,11 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-main, #app{
-  background-color: $dark;
+main, #app, body{
+  background-color: $dark !important;
+}
+
+.card-hover:hover{
+  opacity: 0.87;
+  // cursor: pointer;
 }

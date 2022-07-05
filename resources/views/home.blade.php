@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
-            <h1>Login API</h1>
+            <h1 class="text-white">Login API</h1>
             <div class="card p-4">
                 <h2>Requeriments</h2>
                 <div class="px-4">
@@ -19,6 +19,7 @@
                     <p>• Si no se puede realizar el punto anterior. Enviarnos el código mediante we
                         transfer.</p>
                     <p>• Las versiones deseables para el desarrollo en laravel utilizar 8^ en adelante.</p>
+                    <p>• (Extra) En relacion al CRUD decidi hacerlo con un concepto diferente y con un poco mas de complejidad una relacion de uno a muchos a la vez aplicando el concepto anterior de los usuarios.</p>
                 </div>
             </div>
             <div class="card p-4 my-4">
