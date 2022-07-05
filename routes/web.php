@@ -22,4 +22,7 @@ Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('users', [UsersController::class, 'index'])->name('users');
+Route::middleware(['auth'])->group(function () {
+  Route::get('users', [UsersController::class, 'index'])->name('users');
+});
+
