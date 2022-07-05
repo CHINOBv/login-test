@@ -1,5 +1,17 @@
 // Body
-$body-bg: #f8fafc;
+$body-bg: #fff;
+$purple: #5352ed;
+$hard-purple: #3742fa;
+$red: #ff4757;
+$dark: #2f3542;
+
+$theme-colors: (
+  'primary': $purple,
+  'purple': $purple,
+  'hard-purple': $hard-purple,
+  'red': $red,
+
+);
 
 // Typography
 $font-family-sans-serif: 'Nunito', sans-serif;
